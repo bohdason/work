@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ActiveBox</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="style.css">
+    <meta name="vieport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/apple-touch-icon.png">
+    <link rel="manifest" href="img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta name="googlebot" content="notranslate" />
+    <meta name="description" content="Description page">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    
+
+
+</head>
+<body>
+
+    <!-----Sprite---->
+    <svg style="display: none;">
+<symbol id="facebook" viewBox="0 0 512 512">
+    <g>
+        <path d="M308.3,508.5c-2.5,0.1-4.1,0.3-5.7,0.3c-34.2,0-68.3-0.1-102.5,0.1c-4.8,0-6.1-1.3-6.1-6.1c0.1-79.6,0.1-159.3,0.1-238.9   c0-2.1,0-4.2,0-6.9c-18.6,0-36.7,0-55.1,0c0-28.4,0-56.3,0-85c1.9,0,3.7,0,5.4,0c15,0,30-0.1,45,0.1c3.8,0,4.8-1.1,4.8-4.8   c-0.2-22.3-0.2-44.7,0-67c0.1-15.6,2.6-30.8,9.8-44.9c10.3-19.9,26.6-32.8,47.2-40.8c16.8-6.6,34.5-9,52.3-9.3   c29-0.4,58-0.2,87-0.3c2.7,0,4.9-0.1,4.9,3.7c-0.1,27.5-0.1,55-0.1,82.5c0,0.3-0.1,0.6-0.5,1.9c-1.7,0-3.6,0-5.5,0   c-18,0-36-0.1-54,0c-10.4,0-18.8,4.2-24.1,13.3c-1.6,2.7-2.6,6.2-2.6,9.4c-0.3,17,0,34-0.2,51c0,4,1.2,5.1,5.1,5.1   c25-0.2,50-0.1,75-0.1c2,0,3.9,0,7.3,0c-3.5,28.6-6.9,56.6-10.4,84.9c-26,0-51.3,0-77.1,0C308.3,340.8,308.3,424.4,308.3,508.5z"/>
+    </g>
+</symbol>
+
+<symbol id="instagram" viewBox="0 0 512 512">
+    <g>
+        <path d="M505,257c0,34.8-0.7,69.7,0.2,104.5c1.5,61.6-37.2,109.2-86.5,130.4c-19.8,8.5-40.6,13-62.1,13c-67.3,0.1-134.7,1-202-0.3   c-50.7-1-92.4-22.2-122.3-64c-15.7-22-23.2-47-23.2-74.1c0-71.7,0-143.3,0-215c0-58.5,28.5-99.4,79.1-126C110.2,14,134.1,9.1,159,9   c65.3,0,130.7-0.4,196,0.2c50.7,0.4,93,19.8,124.2,60.6c17.4,22.8,25.8,49,25.8,77.8C505,184,505,220.5,505,257z M46,257   c0,36.7,0,73.3,0,110c0,16.4,3.8,31.8,12.3,45.7c22.3,36.5,56,54.3,97.8,55c67.1,1,134.3,0.4,201.5,0.2c16.5,0,32.5-3.4,47.4-10.5   c40.6-19.4,63.3-50.3,63.1-96.7c-0.4-71-0.1-142-0.1-213c0-20.1-5.7-38.5-17.6-54.7c-23-31.1-54.8-46.4-92.8-46.8   c-67-0.8-134-0.3-201-0.2c-14.3,0-28.1,2.9-41.5,7.9c-36.8,13.7-71,48.4-69.4,99.5C46.9,188,46,222.5,46,257z"/><path d="M257.6,363c-64.5,0-116.5-51.4-116.6-115.4c-0.1-63,52.3-114.6,116.4-114.6c64.3-0.1,116.5,51.4,116.6,114.9   C374,311.3,321.9,362.9,257.6,363z M257.6,326c43.9,0,79.5-35.1,79.4-78.3c-0.1-42.8-35.7-77.8-79.4-77.8   c-43.9,0-79.7,34.9-79.7,78C178,291.1,213.7,326.1,257.6,326z"/><path d="M387.5,98c13.5,0,24.5,11.5,24.5,25.6c-0.1,14.1-11.2,25.5-24.7,25.4c-13.3-0.1-24.2-11.5-24.2-25.3   C363,109.6,374,98,387.5,98z"/>
+    </g>
+</symbol>
+
+<symbol id="linkedin" viewBox="0 0 32 32">
+    <g>
+    <path d="M 7.5 5 C 6.1309372 5 5 6.1309372 5 7.5 L 5 24.5 C 5 25.869063 6.1309372 27 7.5 27 L 24.5 27 C 25.869063 27 27 25.869063 27 24.5 L 27 7.5 C 27 6.1309372 25.869063 5 24.5 5 L 7.5 5 z M 7.5 7 L 24.5 7 C 24.786937 7 25 7.2130628 25 7.5 L 25 24.5 C 25 24.786937 24.786937 25 24.5 25 L 7.5 25 C 7.2130628 25 7 24.786937 7 24.5 L 7 7.5 C 7 7.2130628 7.2130628 7 7.5 7 z M 10.4375 8.71875 C 9.4875 8.71875 8.71875 9.4885 8.71875 10.4375 C 8.71875 11.3865 9.4865 12.15625 10.4375 12.15625 C 11.3855 12.15625 12.15625 11.3865 12.15625 10.4375 C 12.15625 9.4895 11.3855 8.71875 10.4375 8.71875 z M 19.46875 13.28125 C 18.03375 13.28125 17.0815 14.0665 16.6875 14.8125 L 16.625 14.8125 L 16.625 13.5 L 13.8125 13.5 L 13.8125 23 L 16.75 23 L 16.75 18.3125 C 16.75 17.0745 16.99625 15.875 18.53125 15.875 C 20.04425 15.875 20.0625 17.274 20.0625 18.375 L 20.0625 23 L 23 23 L 23 17.78125 C 23 15.22525 22.45575 13.28125 19.46875 13.28125 z M 9 13.5 L 9 23 L 11.96875 23 L 11.96875 13.5 L 9 13.5 z"/>
+</g>
+</symbol>
+
+    </svg>
+
+
+
+
+
+   <header class="header" id="header">
+       <div class="container">
+        <div class="header__inner">
+<div class="header__logo">
+    <h1 class="title"> Easy study for everyone</h1>
+    </div>
+<nav class="nav" id="nav">
+<a class="nav__link" href="#" data-scroll="#features">Reatures</a>
+<a class="nav__link" href="#" data-scroll="#works">Works</a>
+<a class="nav__link" href="#" data-scroll="#team">Out team</a>
+<a class="nav__link" href="#" data-scroll="#reviews">Testimonials</a>
+<a class="nav__link" href="#" data-scroll="#download">Download</a>
+</nav>
+
+<button class="burger" type="button" id="navToggle">
+    <span class="burger__item">Menu</span>
+</button>
+
+        </div> 
+       </div>
+       </header>
+
+       
+<section>
+<div class="intro" id="intro">
+<div class="container">
+    <div class="intro__inner">
+    <h1 class="intro_title">You Favorite One Page Multi Pyrpose Temlate </h1>
+    <h2 class="intro__subtitle"> Loren ipsum dolor sit amet consectetur adisicing edit . glbg glbnlgl lbgblg lbglb  lgg </h2>
+    <a class="btn btn--red "href="#">Find Out More</a>
+</div>
+</div>
+</div>
+</section>
+<!--Features----------->
+
+
+<div class="container" id="features">
+    <div class="features">
+    <div class="features__item">
+        <div class="features__photo"><img class="features__icon" src="img/1.png" alt=""></div>
+    <div class="features_text">
+        <h4 class="features__title">Expert Technicians</h4>
+    <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+    </div>
+    </div>
+
+
+    <div class="features__item">
+        <div class="features__photo"> <img class="features__icon" src="img/2.png" alt=""></div>
+    <div class="features_text">
+    <h4 class="features__title"> Professional Service</h4>
+    <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+    </div>
+    </div>
+
+    <div class="features__item">
+        <div class="features__photo"><img class="features__icon" src="img/3.png" alt=""></div>
+    <div class="features_text">
+    <h4 class="features__title" >Great Support</h4>
+    <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+    </div>
+    </div>
+
+    <div class="features__item">
+        <div class="features__photo"><img class="features__icon" src="img/4.png" alt=""></div>
+    <div class="features_text">
+    <h4 class="features__title">Technical Skills</h4>
+    <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+    </div>
+    </div>
+    <div class="features__item">
+        <div class="features__photo"><img class="features__icon" src="img/5.png" alt=""></div>
+    <div class="features_text">
+    <h4 class="features__title">Highly Recomended</h4>
+    <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+    </div>
+    </div>
+    <div class="features__item">
+        <div class="features__photo"><img class="features__icon" src="img/6.png" alt=""></div>
+    <div class="features_text">
+    <h4 class="features__title">Positive Reviews</h4>
+    <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <!----------Works--->
+<section>
+     
+    <div class="works" id="works">
+    <div class="works__item">
+    <img class="works__photo" src="img/works/1.jpg" alt="">
+    <div class="works__content">
+        <div class="works__title">Project Name</div>
+        <div class="works__text">User interface Desigh</div>
+    </div>
+</div>
+
+<div class="works__item">
+    <img class="works__photo" src="img/works/2.jpg" alt="">
+    <div class="works__content">
+        <div class="works__title">Project Name</div>
+        <div class="works__text">User interface Desigh</div>
+    </div>
+</div>
+
+    <div class="works__item">
+        <img class="works__photo" src="img/works/3.jpg" alt="">
+        <div class="works__content">
+            <div class="works__title">Project Name</div>
+            <div class="works__text">User interface Desigh</div>
+        </div>
+    </div>
+
+        <div class="works__item">
+            <img class="works__photo" src="img/works/3.jpg" alt="">
+            <div class="works__content">
+                <div class="works__title">Project Name</div>
+                <div class="works__text">User interface Desigh</div>
+            </div>
+</div>
+<div class="works__item">
+    <img class="works__photo" src="img/works/5.jpg" alt="">
+    <div class="works__content">
+        <div class="works__title">Project Name</div>
+        <div class="works__text">User interface Desigh</div>
+    </div>
+</div>
+<div class="works__item">
+    <img class="works__photo" src="img/works/6.jpg" alt="">
+    <div class="works__content">
+        <div class="works__title">Project Name</div>
+        <div class="works__text">User interface Desigh</div>
+    </div>
+</div>
+<div class="works__item">
+    <img class="works__photo" src="img/works/5.jpg" alt="">
+    <div class="works__content">
+        <div class="works__title">Project Name</div>
+        <div class="works__text">User interface Desigh</div>
+    </div>
+</div>
+
+<div class="works__item">
+    <img class="works__photo" src="img/works/2.jpg" alt="">
+    <div class="works__content">
+        <div class="works__title">Project Name</div>
+        <div class="works__text">User interface Desigh</div>
+    </div>
+</div>
+   </div>
+</section>
+
+<!-----Team---->
+<section>
+<div class="team" id="team">
+<div class="container">
+    <div class="team__inner">
+
+        <div class="team__item">
+            <img class="team_photo" src="img/Team/1.jpg" alt="">
+            <div class="team__name"> Ruth Woods</div>
+            <div class="team__prof">Developer , SEO</div>
+            <div class="team__text"><p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+                <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+            </div>
+            <div class="social">
+                <a class="social__item" href="#" target="_blank"> 
+                   <svg class="social__icon">
+                    <use xlink:href="#facebook"></use>
+                   </svg>
+                </a>
+                <a class="social__item" href="#" target="_blank"> 
+                    <svg class="social__icon">
+                     <use xlink:href="#instagram"></use>
+                    </svg>
+                 </a>
+                 <a class="social__item" href="#" target="_blank"> 
+                    <svg class="social__icon" >
+                     <use xlink:href="#linkedin"></use>
+                    </svg>
+                 </a>
+                
+
+
+
+            </div>
+        </div>
+
+        <div class="team__item">
+            <img class="team_photo" src="img/Team/2.jpg" alt="">
+            <div class="team__name"> Ruth Woods</div>
+            <div class="team__prof">Developer , SEO</div>
+            <div class="team__text"><p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+                <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+            </div>
+            <div class="social">
+                <a class="social__item" href="#" target="_blank"> 
+                    <svg class="social__icon">
+                     <use xlink:href="#facebook"></use>
+                    </svg>
+                 </a>
+                 <a class="social__item" href="#" target="_blank"> 
+                     <svg class="social__icon">
+                      <use xlink:href="#instagram"></use>
+                     </svg>
+                  </a>
+                  <a class="social__item" href="#" target="_blank"> 
+                     <svg class="social__icon" >
+                      <use xlink:href="#linkedin" ></use>
+                     </svg>
+                  </a>
+            </div>
+        </div>
+
+        <div class="team__item">
+            <img class="team_photo" src="img/Team/3.jpg"  alt="">
+            <div class="team__name"> Ruth Woods</div>
+            <div class="team__prof">Developer , SEO</div>
+            <div class="team__text"><p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+                <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+            </div>
+            <div class="social">
+                <a class="social__item" href="#" target="_blank"> 
+                    <svg class="social__icon">
+                     <use xlink:href="#facebook"></use>
+                    </svg>
+                 </a>
+                 <a class="social__item" href="#" target="_blank"> 
+                     <svg class="social__icon">
+                      <use xlink:href="#instagram"></use>
+                     </svg>
+                  </a>
+                  <a class="social__item" href="#" target="_blank"> 
+                     <svg class="social__icon" >
+                      <use xlink:href="#linkedin"></use>
+                     </svg>
+                  </a>
+            </div>
+        </div>
+
+        <div class="team__item">
+            <img class="team_photo" src="img/Team/4.jpg" alt="">
+            <div class="team__name"> Ruth Woods</div>
+            <div class="team__prof">Developer , SEO</div>
+            <div class="team__text"><p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+                <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+            </div>
+            <div class="social">
+                <a class="social__item" href="#" target="_blank"> 
+                    <svg class="social__icon">
+                     <use xlink:href="#facebook"></use>
+                    </svg>
+                 </a>
+                 <a class="social__item" href="#" target="_blank"> 
+                     <svg class="social__icon">
+                      <use xlink:href="#instagram"></use>
+                     </svg>
+                  </a>
+                  <a class="social__item" href="#" target="_blank"> 
+                     <svg class="social__icon" >
+                      <use xlink:href="#linkedin"></use>
+                     </svg>
+                  </a>
+            </div>
+        </div> <!---/.team__item-->
+
+
+
+
+    </div>  <!---/.team__iner-->
+
+
+</div> <!---/.container-->
+</div> 
+</section>
+
+
+
+<!-----reviews ----------------------------------------------------->
+
+
+
+<section>
+    <div class="reviews" id="reviews">
+<div class="container">
+    <div class="reviews__slider" id="reviewsSlider">
+    <div class="slick-item">
+    <div class="reviews__item">
+        <div class="reviews__photo">
+            <img class="reviews__img" src="img/works/2.jpg">
+        </div>
+        <div class="reviews__content">
+            <div class="reviews__text">Usage of the Internet is becoming more common due to rapid advancement of technology and power</div>
+<div class="reviews__author"> Susan Sims , Designer at </div>
+        </div>
+</div>
+</div>
+
+<div class="slick-item">
+<div class="reviews__item">
+    <div class="reviews__photo">
+        <img class="reviews__img" src="img/works/2.jpg">
+    </div>
+    <div class="reviews__content">
+        <div class="reviews__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</div>
+<div class="reviews__author"> Susan Sims , Designer at </div>
+    </div>
+</div>
+</div>
+
+
+
+</div> <!-----reviewSlider---------------------->
+
+</div>    <!----/.container--->
+    </div> <!----/.reviews--->
+</section>
+
+<!------ Download-------->
+<section>
+<div class="download" id="download">
+    <div class="container">
+        <h3 Class="downlod__title" >Are you ready to start? Download Now for Free!</h3>
+        <div class="download__text">
+            <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power</p>
+        </div>
+        <a class="btn btn--red btn--long"  href="#">Download Here </a>
+    </div>
+</div>
+</section>
+
+
+<!----Footer--------------->
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+
+            <div class="footer__block">
+                <h4 class="footer__title">Location</h4>
+<address class="footer__address">
+    <div>3481 Merlose Place</div>
+    <div>Beverly Hills, CA 90210</div>
+</address>
+            </div>
+
+            <div class="footer__block">
+                <h4 class="footer__title">Share with Love</h4>
+                <div class="social social--footer">
+                    <a class="social__item" href="#" target="_blank"> 
+                       <svg class="social__icon">
+                        <use xlink:href="#facebook"></use>
+                       </svg>
+                    </a>
+                    <a class="social__item" href="#" target="_blank"> 
+                        <svg class="social__icon">
+                         <use xlink:href="#instagram"></use>
+                        </svg>
+                     </a>
+                     <a class="social__item" href="#" target="_blank"> 
+                        <svg class="social__icon" >
+                         <use xlink:href="#linkedin"></use>
+                        </svg>
+                     </a>
+                </div>
+                </div>
+
+                <div class="footer__block">
+                    <h4 class="footer__title">About Active Box</h4>
+    <div class="footer__text">
+        <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power</p>
+        </div>
+    </div>
+    
+
+
+        </div> <!----footer__inner---->
+
+    </div> <!----containerr--------->
+
+<div class="copyright">
+<div class="container">
+    <div class="copyright__text">
+       <div>Copyright 2015 ActiveBox. All Right Reserved</div> 
+        <div>Made wuth Y by Kamal Chaneman</div>
+    </div>
+</div>
+</div>
+
+
+</footer>
+
+<script  src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script src="app.js"></script>
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
